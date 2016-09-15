@@ -26,6 +26,7 @@ def index(request):
     html32 = get_html(url32)
 
     context = Context({
+        "datetime": datetime.datetime.now(),
         "prod_name3": get_product_name(html32),
         "prod_batch_num3": get_product_batch_number(html32),
         "rm_name3": get_rm_name(html32),
