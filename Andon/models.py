@@ -4,6 +4,7 @@ from django.db import models
 import urllib2
 import re
 
+# models.py can be used to create SQLite database in the future
 """
 # Create your models here.
 class Product(models.Model):
@@ -23,6 +24,4 @@ class Product(models.Model):
 x = Product("PH1234", "12345678")
 print(x.get_batch_number())
 """
-
-# below is the web scraping logic
 

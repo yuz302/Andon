@@ -8,29 +8,38 @@
     <link rel="stylesheet" type="text/css" href="{% static 'Andon/style.css' %}"/>
 </head>
 <body>
-    <div id="wrapper1">
+    <div id="wrapper2">
         <div id="Blender22">Blender: PB22</div>
 
         <div id='status'>--Blending--</div>
-        <div id='batch#'>Batch number: {{ prod_name1 }}</div>
-        <div id="productname">Product name: {{ prod_batch_num1 }}</div>
+        <div id='batch#'>Batch number: {{ prod_name2 }}</div>
+        <div id="productname">Product name: {{ prod_batch_num2 }}</div>
+        <div>Raw material name: {{ rm_name2 }}</div>
+        <div>Raw material batch number: {{ rm_batch_number2 }}</div>
     </div>
-    <hr/>
-     <div id="wrapper2">
-        <div id="Blender32">Blender: PB32</div>
 
-        <div id='status'>--Blending--</div>
-        <div id='batch#'>Batch number: {{ prod_name }}</div>
-        <div id="productname">Product name: {{ prod_batch_num }}</div>
-
-    </div>
     <hr/>
+
     <div id="wrapper3">
-        <div id="Blender42">Blender: PB42</div>
+        <div id="Blender32">Blender: PB32</div>
 
         <div id='status'>--Blending--</div>
         <div id='batch#'>Batch number: {{ prod_name3 }}</div>
         <div id="productname">Product name: {{ prod_batch_num3 }}</div>
+        <div>Raw material name: {{ rm_name3 }}</div>
+        <div>Raw material batch number: {{ rm_batch_number3 }}</div>
+    </div>
+
+    <hr/>
+
+    <div id="wrapper4">
+        <div id="Blender42">Blender: PB42</div>
+
+        <div id='status'>--Blending--</div>
+        <div id='batch#'>Batch number: {{ prod_name4 }}</div>
+        <div id="productname">Product name: {{ prod_batch_num4 }}</div>
+        <div>Raw material name: {{ rm_name4 }}</div>
+        <div>Raw material batch number: {{ rm_batch_number4 }}</div>
     </div>
 
 </body>
