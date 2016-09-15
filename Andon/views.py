@@ -5,6 +5,8 @@ from django.template import Template, Context
 import urllib2
 import re
 import datetime
+from django.shortcuts import render_to_response
+from django.template.context import RequestContext
 
 # Create your views here.
 

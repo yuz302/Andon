@@ -1,18 +1,36 @@
+{% load static %}
 
-<html>
-    <!--this webpage displays blending information for browsers on remote PCs-->
-    <!--IP address is 10.10.10.123 -->
-    <head>
-        <title>Andon PB32</title>
-        <meta charset="utf-8" />
-        <!--<link rel="stylesheet" type="text/css" href="/Andon/style.css">-->
-    </head>
-    <body>
-        <h1>Blender: PB32</h1>
+<!--this webpage displays blending information for browsers on remote PCs-->
+<!--IP address is 10.10.10.123 -->
+<head>
+    <title>Andon PB32</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="{% static 'Andon/style.css' %}"/>
+</head>
+<body>
+    <div id="wrapper1">
+        <div id="Blender22">Blender: PB22</div>
 
-        <h2 id='blending'>--Blending--</h2>
-        <h3 id='batch#'>Batch number: {{ prod_name }}</h3>
-        <h3 id="productname">Product name: {{ prod_batch_num }}</h3>
+        <div id='status'>--Blending--</div>
+        <div id='batch#'>Batch number: {{ prod_name1 }}</div>
+        <div id="productname">Product name: {{ prod_batch_num1 }}</div>
+    </div>
+    <hr/>
+     <div id="wrapper2">
+        <div id="Blender32">Blender: PB32</div>
 
-    </body>
-</html>
+        <div id='status'>--Blending--</div>
+        <div id='batch#'>Batch number: {{ prod_name }}</div>
+        <div id="productname">Product name: {{ prod_batch_num }}</div>
+
+    </div>
+    <hr/>
+    <div id="wrapper3">
+        <div id="Blender42">Blender: PB42</div>
+
+        <div id='status'>--Blending--</div>
+        <div id='batch#'>Batch number: {{ prod_name3 }}</div>
+        <div id="productname">Product name: {{ prod_batch_num3 }}</div>
+    </div>
+
+</body>
