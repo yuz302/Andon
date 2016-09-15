@@ -1,0 +1,8 @@
+URLs
+
+32: 
+http://10.10.10.123/user/andon.htm
+
+CSV location:
+Omega temperature:
+Network//FS3//Data//0003340101ef_latestreading.csv
