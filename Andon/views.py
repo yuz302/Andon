@@ -37,6 +37,7 @@ def index(request):
     return HttpResponse(template.render(context))   # the template after rendering
 
 
+# below function is not in use. It's just a sample for how to get date and time with python built-in package
 def curr_datetime(request):
     now = datetime.datetime.now()
     html = "<html><body>It is now %s. </body></html>" % now
